@@ -48,14 +48,14 @@ a {
 
 /* Шрифты, цвета */
 
-    /*Header*/
-
 body {
     font-family: "GilroyExtraBold";
     color: black;
 
     background-color: white;
 }
+
+    /*Header*/
 
 .head-nav__logo {
     font-size: 48px;
@@ -124,6 +124,90 @@ body {
     font-family: "OpenSansLight";
     font-size: 13px;
     line-height: 20px;
+}
+
+.popular-categories__item {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.services-item {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.services-item.active {
+    color: #f7e184;
+}
+
+.services-descr__title {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.services-descr__item {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.about-us__title,
+.contacts__title {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.about-us__descr,
+.contacts__descr {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.about-us__item {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.about-us a,
+.contacts a {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+    /* Footer */
+
+.footer {
+    background-color: #464646;
+
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    color: white;
+}
+
+.footer-user-nav__item a,
+.footer-nav-social__item a,
+.footer-nav-copyright a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-nav__logo {
+    font-family: 'GilroyExtraBold';
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #ffc600;
+}
+
+.footer-site-nav__item a {
+    font-family: 'GilroyExtraBold';
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
 }
 
 /* --- */
