@@ -9,45 +9,47 @@
 <body class="inner-body">
     <header>
         <h1 class="head-nav__logo">Device</h1>
-        <nav class="head-nav__top">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                <label>
-                    <input type="text" name="search" placeholder="Поиск по сайту">
-                </label>
-                <button type="submit">Найти</button>
-            </form>
-            <ul class="user-nav__list">
-                <li class="user-nav__item logout">
-                    Валентин Петухов
-                    <a href="#">Выйти</a>
-                </li>
-                <li class="user-nav__item compare">Сравнить</li>
-                <li class="user-nav__item cart">Корзина</li>
-            </ul>
-        </nav>
-        <nav class="head-nav__bottom">
-            <div class="catalog-link__container">
-                <ul class="catalog-link__list">
-                    <li>Каталог товаров
-                        <ul class="sub-catalog__list">
-                            <li class="sub-catalog__item">Виртуальная реальность</li>
-                            <li class="sub-catalog__item">Моноподы для селфи</li>
-                            <li class="sub-catalog__item">Экшн-камеры</li>
-                            <li class="sub-catalog__item">Фитнес-браслеты</li>
-                            <li class="sub-catalog__item">Умные часы</li>
-                            <li class="sub-catalog__item">Квадрокоптеры</li>
-                        </ul>
+        <div class="head-nav__wrapper">
+            <nav class="head-nav__top">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label>
+                        <input type="text" name="search" placeholder="Поиск по сайту">
+                    </label>
+                    <button type="submit">Найти</button>
+                </form>
+                <ul class="user-nav__list">
+                    <li class="user-nav__item logout">
+                        Валентин Петухов
+                        <a href="#">Выйти</a>
                     </li>
+                    <li class="user-nav__item compare">Сравнить</li>
+                    <li class="user-nav__item cart">Корзина</li>
                 </ul>
-            </div>
-            <div class="site-nav__container">
-                <ul class="site-nav__list">
-                    <li class="site-nav__item">Доставка</li>
-                    <li class="site-nav__item">Гарантия</li>
-                    <li class="site-nav__item">Контакты</li>
-                </ul>
-            </div>
-        </nav>
+            </nav>
+            <nav class="head-nav__bottom">
+                <div class="catalog-link__container">
+                    <ul class="catalog-link__list">
+                        <li>Каталог товаров
+                            <ul class="sub-catalog__list visually-hidden">
+                                <li class="sub-catalog__item">Виртуальная реальность</li>
+                                <li class="sub-catalog__item">Моноподы для селфи</li>
+                                <li class="sub-catalog__item">Экшн-камеры</li>
+                                <li class="sub-catalog__item">Фитнес-браслеты</li>
+                                <li class="sub-catalog__item">Умные часы</li>
+                                <li class="sub-catalog__item">Квадрокоптеры</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site-nav__container">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item">Доставка</li>
+                        <li class="site-nav__item">Гарантия</li>
+                        <li class="site-nav__item">Контакты</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <h2 class="category-title">Моноподы для селфи</h2>
@@ -61,7 +63,7 @@
         <aside class="filters">
             <h3>Фильтр:</h3>
             <form class="filters__list" action="https://echo.htmlacademy.ru/courses" method="get" oninput="priceoutput.value=filterprice.value">
-                <fieldset class="filter-price">
+                <fieldset class="filters__item filter-price">
                     <legend>Стоимость</legend>
                     <label class="visually-hidden" for="filterprice"></label>
                     <div class="input-area">
@@ -71,7 +73,7 @@
                         <output name="priceoutput"></output>
                     </div>
                 </fieldset>
-                <fieldset class="filter-color">
+                <fieldset class="filters__item filter-color">
                     <legend>Цвет</legend>
                     <ul class="filter-color__list">
                         <li class="filter-color__option">
@@ -106,7 +108,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset class="filter-bluetooth">
+                <fieldset class="filters__item filter-bluetooth">
                     <legend>Bluetooth</legend>
                     <ul class="filter-bluetooth__list">
                         <li class="filter-bluetooth__option">
@@ -126,20 +128,20 @@
             <section class="sorting">
                 <h3>Сортировка:</h3>
                 <ul class="sorting__list">
-                    <li class="sorting__item">По цене</li>
+                    <li class="sorting__item current">По цене</li>
                     <li class="sorting__item">По типу</li>
                     <li class="sorting__item">По популярности</li>
                 </ul>
                 <section class="sorting-order">
-                    <span>По возрастанию</span>
-                    <span>По убыванию</span>
+                    <span class="sorting-order__item current">По возрастанию</span>
+                    <span class="sorting-order__item">По убыванию</span>
                 </section>
             </section>
             <section class="catalog">
                 <h3 class="visually-hidden">Каталог товаров</h3>
                 <ul class="catalog__list">
                     <li class="catalog__item">
-                        <img src="#" alt="Любительская селфи-палка">
+                        <img src="img/item-1.jpg" alt="Любительская селфи-палка">
                         <a href="#">
                             <h4 class="item-title">Любительская селфи-палка</h4>
                             <span class="item-price">500 руб.</span>
@@ -150,7 +152,7 @@
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <img src="#" alt="Профессиональная селфи-палка">
+                        <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
                         <a href="#">
                             <h4 class="item-title">Профессиональная селфи-палка</h4>
                             <span class="item-price">1 500 руб.</span>
@@ -161,7 +163,7 @@
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <img src="#" alt="Непотопляемая селфи-палка">
+                        <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
                         <a href="#">
                             <h4 class="item-title">Непотопляемая селфи-палка</h4>
                             <span class="item-price">2 500 руб.</span>
@@ -172,7 +174,7 @@
                         </div>
                     </li>
                     <li class="catalog__item">
-                        <img src="#" alt="Селфи-палка «Следуй за мной»">
+                        <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
                         <a href="#">
                             <h4 class="item-title">Селфи-палка «Следуй за мной»</h4>
                             <span class="item-price">4 900 руб.</span>
@@ -195,17 +197,20 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="footer-nav__top">
             <div class="footer-nav__logo">Device</div>
             <nav class="footer-user-nav">
                 <ul class="footer-user-nav__list">
-                    <li class="footer-user-nav__item logout">
-                        Валентин Петухов
-                        <a href="#">Выйти</a>
+                    <li class="footer-user-nav__item login">
+                        <a href="#">Войти</a>
                     </li>
-                    <li class="footer-user-nav__item compare">Сравнить</li>
-                    <li class="footer-user-nav__item cart">Корзина</li>
+                    <li class="footer-user-nav__item compare">
+                        <a href="#">Сравнить</a>
+                    </li>
+                    <li class="footer-user-nav__item cart">
+                        <a href="#">Корзина</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -215,9 +220,15 @@
             </div>
             <nav class="footer-site-nav">
                 <ul class="footer-site-nav__list">
-                    <li class="footer-site-nav__item">Доставка</li>
-                    <li class="footer-site-nav__item">Гарантия</li>
-                    <li class="footer-site-nav__item">Кредит</li>
+                    <li class="footer-site-nav__item">
+                        <a href="#">Доставка</a>
+                    </li>
+                    <li class="footer-site-nav__item">
+                        <a href="#">Гарантия</a>
+                    </li>
+                    <li class="footer-site-nav__item">
+                        <a href="#">Кредит</a>
+                    </li>
                 </ul>
             </nav>
             <div class="footer-nav-telephone">
@@ -227,13 +238,21 @@
         <div class="footer-nav__bottom">
             <section class="footer-nav-social">
                 <ul class="footer-nav-social__list">
-                    <li class="footer-nav-social__item">Фейсбук</li>
-                    <li class="footer-nav-social__item">Инстаграм</li>
-                    <li class="footer-nav-social__item">Твиттер</li>
+                    <li class="footer-nav-social__item">
+                        <a href="#">Фейсбук</a>
+                    </li>
+                    <li class="footer-nav-social__item">
+                        <a href="#">Инстаграм</a>
+                    </li>
+                    <li class="footer-nav-social__item">
+                        <a href="#">Твиттер</a>
+                    </li>
                 </ul>
             </section>
             <div class="footer-nav-copyright">
-                <a href="#">HTML Academy</a>
+                <a href="#">
+                    <span class="">HTML Academy</span>
+                </a>
             </div>
         </div>
     </footer>

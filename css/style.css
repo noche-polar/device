@@ -93,7 +93,11 @@ body {
     line-height: 36px;
 }
 
-    /* Main */
+.user-nav__item.logout a {
+    opacity: 0.5;
+}
+
+    /* Main index*/
 
 .bestseller-slider h3 {
     font-size: 47px;
@@ -177,6 +181,92 @@ body {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
+}
+
+    /* Main catalog */
+
+.category-title {
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.breadcrumbs__item {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.filters h3 {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.filters__item {
+    border: none;
+}
+
+.filters__item legend {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.filters__item label {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.filters button[type=submit] {
+    font-size: 18px;
+    text-transform: uppercase;
+
+    border: none;
+    background-color: transparent;
+}
+
+.sorting h3 {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.sorting__list,
+.sorting-order {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting__list .current,
+.sorting-order .current {
+    color: black;
+}
+
+.item-title {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.item-price {
+    font-family: 'OpenSansLight', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646;
+}
+
+.pagination__item {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__item.prev,
+.pagination__item.current,
+.pagination__item.next {
+    color: black;
 }
 
     /* Footer */
