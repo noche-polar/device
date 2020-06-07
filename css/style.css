@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "GilroyExtraBold";
+    src: url("../fonts/web/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/web/gilroyextrabold.woff") format("woff");
+   }
+
+@font-face {
+    font-family: "GilroyLight";
+    src: url("../fonts/web/gilroylight.woff2") format("woff2"),
+         url("../fonts/web/gilroylight.woff") format("woff");
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/web/opensans.woff2") format("woff2"),
+         url("../fonts/web/opensans.woff") format("woff");
+}
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/web/opensanslight.woff2") format("woff2"),
+         url("../fonts/web/opensanslight.woff") format("woff");
+}
+
+/* body,
+ul,
+fieldset,
+p,
+h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+} */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+/* Шрифты, цвета */
+
+    /*Header*/
+
+body {
+    font-family: "GilroyExtraBold";
+    color: black;
+
+    background-color: white;
+}
+
+.head-nav__logo {
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.head-nav__wrapper {
+    background-color: #f7e296;
+}
+
+.search-form input::placeholder {
+    font-family: "OpenSansLight";
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.user-nav__item {
+    font-family: "OpenSansLight";
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.head-nav__bottom {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.sub-catalog__list {
+    font-family: "OpenSansLight";
+    font-size: 15px;
+    line-height: 36px;
+}
+
+    /* Main */
+
+.bestseller-slider h3 {
+    font-size: 47px;
+    line-height: 56px;
+}
+
+.bestseller-item__descr {
+    font-family: "OpenSansLight";
+    font-size: 15px;
+    line-height: 30px;
+    color: #464646;
+}
+
+.bestseller-item__link {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.bestseller-item__features .feature-value {
+    font-family: "GilroyLight";
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.bestseller-item__features .feature-name {
+    font-family: "OpenSansLight";
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* --- */
